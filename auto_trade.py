@@ -14,8 +14,8 @@ from sentiment import check_sentiment
 import dashboard
 
 BASE_URL = "https://demo-fapi.binance.com"
-API_KEY = "YOUR_API_KEY_HERE"
-API_SECRET = "YOUR_API_SECRET_HERE"
+API_KEY = os.environ.get("BINANCE_API_KEY") or ""
+API_SECRET = os.environ.get("BINANCE_API_SECRET") or ""
 
 SYMBOLS = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
 BOX_CHECK_INTERVAL = 15

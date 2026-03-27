@@ -1,0 +1,16 @@
+# Keys and secrets
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+trade_logs/
+*.log
+
+# Mac
+.DS_Store
